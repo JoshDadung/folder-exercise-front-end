@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<h2>PARSE JSON ARRAY</h2>
+<p>data yang ditulis dengan array json akan diurai menjadi array Javascript.</p>
+<hr>
+<p id="demo3"></p>
+<script>
+    const text = '["Dadung, Joshua", "wandi darea", "recky ronga", "dilben tulum"]';
+    const myArr = JSON.parse(text);
+    console.log(myArr);
+    document.getElementById("demo3").innerHTML = "my name is " + myArr[0];
+</script>
+</body>
+</html>
